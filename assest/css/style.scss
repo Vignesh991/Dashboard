@@ -183,7 +183,7 @@ body {
 
                             button {
                                 position: absolute;
-                                left: 43%;
+                                left: 48%;
                                 top: 10px;
                                 width: 36px;
                                 height: 63%;
@@ -288,6 +288,9 @@ body {
                             padding: 24px;
                             border-radius: 20px;
                             margin-bottom: 24px;
+                            &:hover{
+                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                            }
                             ul{
                                 column-gap: 24px;
                                 align-items: center;
@@ -337,22 +340,30 @@ body {
                     .card{
                         padding: 24px;
                         border-radius: 20px;
+                        &:hover{
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        }
                         .col-bottom{
                             margin-bottom: 30px;
                         }
                         table{
-                            td{
-                                padding: 16px 0;
-                                &:nth-child(1){
-                                    display: flex;
-                                    gap: 12px;
-                                    padding-left: 6px;
+                            tr{
+                                &:hover{
+                                    background-color:lightyellow;
                                 }
-                                img{
-                                    width: 36px;
-                                    height: 36px;
-                                    border-radius: 50%;
-                                    object-fit: cover;
+                                td{
+                                    padding: 16px 0;
+                                    &:nth-child(1){
+                                        display: flex;
+                                        gap: 12px;
+                                        padding-left: 6px;
+                                    }
+                                    img{
+                                        width: 36px;
+                                        height: 36px;
+                                        border-radius: 50%;
+                                        object-fit: cover;
+                                    }
                                 }
                             }
                            .Completed{
